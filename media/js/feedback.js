@@ -137,7 +137,7 @@
         $('article textarea').each(function(i, element) {
             countRemaining(element);
         });
-        $('article textarea').live('keyup', function(e) {
+        $('article textarea').live('input keyup cut paste', function(e) {
             countRemaining(this);
         });
 
